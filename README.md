@@ -2,6 +2,8 @@
 
 an AI-powered vacation planner
 
+![](https://github.com/shaomaiguanguan/vacation_planner/blob/main/demo.gif)
+
 # Quick start
 
 clone the repo:
