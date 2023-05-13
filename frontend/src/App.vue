@@ -5,3 +5,9 @@ import { RouterView } from 'vue-router'
 <template>
   <RouterView />
 </template>
+
+<style>
+#app {
+  margin-top: 60px
+}
+</style>
