@@ -26,16 +26,19 @@
                     <button type="button" class="btn btn-primary" @click="handleSubmit">免费规划</button>
                 </div>
             </div>
-            <div class="col"><p>{{ msg }}</p></div>
+            <div class="col">
+                <div v-html="msg"></div>
+            </div>
         </div>
     </div>
         
 </template>
 
 <script>
-import axios from 'axios'
-import Nprogress from 'nprogress'
-import "nprogress/nprogress.css"
+import axios from 'axios';
+import Nprogress from 'nprogress';
+import "nprogress/nprogress.css";
+
 
 
 export default{

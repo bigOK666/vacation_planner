@@ -34,7 +34,7 @@ def vacation_plan():
 def generate_vacation_plan(current_location, destination, duration, budget):
     # content = f"Assume the role of an expert travel advisor. Give an intensive detailed vacation for an customer who wants to travel from {current_location} to {destination} for {duration} days. The budget for the vacation is {budget} chinese yuan. Give a plan in chinese"
     system_content = "You are an expert travel advisor"
-    user_content = f"Give an intensive detailed vacation for an customer who wants to travel from {current_location} to {destination} for {duration} days. The budget for the vacation is {budget} chinese yuan. Give a plan in chinese including\n 1. Top tourist attractions.\n 2. Best restaurants in {destination} (according to the budget).\n 3. Best tours.\n 4. Best hotels in {destination} (according to the budget).\n 5. Top things to avoid.\n 6. Top outdoor activities.\n"
+    user_content = f"Give an intensive detailed vacation for an customer who wants to travel from {current_location} to {destination} for {duration} days. The budget for the vacation is {budget} chinese yuan. Give a plan in chinese including\n 1. Top tourist attractions.\n 2. Best restaurants in {destination} (according to the budget).\n 3. Best tours.\n 4. Best hotels in {destination} (according to the budget).\n 5. Top things to avoid.\nFormat the output in chinese as item list in HTML without <body> tag."
     response = openai.ChatCompletion.create(
         model="gpt-3.5-turbo",
         messages=[
