@@ -11,7 +11,7 @@ app.config.from_object(__name__)
 
 CORS(app, resources={r"/*": {"origins": "*"}})
 
-API_KEY = "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"
+API_KEY = ""
 openai.api_key = API_KEY
 
 
